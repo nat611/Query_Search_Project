@@ -31,7 +31,7 @@ prompt = """
     to cook a curry or a recipe to bake a cake, although the tasks are different the fields should be the same (e.g. ingredients, preparation time).' 
 
     'If there is any sort of product, transaction, or recommendation related intent, make sure to include product categories (e.g tech, fashion, books), 
-    relevant features, prices ranges, and other relevant details. ' 
+    relevant features, prices ranges, brands, and other relevant details. ' 
 
     'If the user query is vague or ambiguous, make your best guess based on the context and information provided. User queries can often 
     be short and lack grammatical structure, so use your judgement to interpret the query meaning.' 

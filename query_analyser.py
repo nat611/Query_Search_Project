@@ -19,11 +19,13 @@ prompt = """
     'As this is a search engine interface, it is important that the other fields are created with search results in mind. For 
     example, if the user is searching for a restaurant recommendation, the location and cuisine type are important fields to include. 
     If the user is looking for a instructional guide, chronological steps and difficulty level could be important fields to include.
-    Do not include fields that are not helpful for guiding search results.' 
+    Do not include fields that are redundant or not helpful for guiding search results.' 
 
     'Different types of queries will not always have the same fields. For example, a travel related query might have fields such as 
     destination, travel dates, and budget, while a how-to query might have fields such as steps, and tools required.' 
     
+    'Do not '
+
     'Furthermore, the fields should be the same when possible for similar queries. This is because the output will be used to guide 
     search result templates and we cannot account for an infinite number of fields. For example, if the user is asking for a recipe 
     to cook a curry or a recipe to bake a cake, although the tasks are different the fields should be the same (e.g. ingredients, preparation time).' 

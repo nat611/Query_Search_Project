@@ -25,7 +25,7 @@ prompt = """
     destination, travel dates, and budget, while a how-to query might have fields such as steps, and tools required.' 
     
     'Furthermore, the fields should be the same when possible for similar queries. This is because the output will be used to guide 
-    pre-defined search results and we cannot account for an infinite number of fields. For example, if the user is asking for a recipe 
+    search result templates and we cannot account for an infinite number of fields. For example, if the user is asking for a recipe 
     to cook a curry or a recipe to bake a cake, although the tasks are different the fields should be the same (e.g. ingredients, preparation time).' 
 
     'If there is any sort of product, transaction, or recommendation related intent, make sure to include product categories (e.g tech, fashion, books), 

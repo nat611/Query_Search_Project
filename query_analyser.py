@@ -16,14 +16,18 @@ prompt = """
     - Do NOT add Markdown, code fences, or any explanation
     - The output must start with { and end with }
 
-    IMPORTANT: If the user query is simply too vague, prompt the user for clarification and return the JSON structure: {"error": "Sorry, I didn't understand your question. Could you provide more detail? :)"}
+    IMPORTANT: If the user query is too vague or if the prompt is not understandable (e.g it is complete gibberish), prompt the user for clarification and return the JSON structure: {"error": "Sorry, I didn't understand your question. Could you provide more detail? :)"}
 
 
     Example: 
     Input: "Good cafes in Edinburgh for matcha lattes under £10"
     Output:
     {"intent": "local_search", "category": "cafes", "location": "Edinburgh", "filters": {"drink": "matcha lattes", "price": "<£10"}, "summary": "User is looking for cafes in Edinburgh that serve matcha lattes and cost less than £10."}
-
+    
+    Example 2: 
+        Input: "Scariest horror movies 2024" 
+        Output:
+        {"intent": "recommendation_search", "category": "horror movies", "filters": {"year": "2024", "theme": "scary"}, "summary": "User is looking for recommendations of the scariest horror movies released in 2024."}
     """
 
 # initialize the client 

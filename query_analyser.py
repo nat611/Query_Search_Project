@@ -57,9 +57,10 @@ prompt = """
     "summary": "User is looking for recommendations of the scariest horror movies released in 2024."}'
 
     """
+hf_token = os.environ.get("hf_token") # REPLACE WITH YOUR HUGGINGFACE TOKEN
 
 # initialize the client 
-client = InferenceClient()
+client = InferenceClient(api_key=hf_token)
 
 # parsing logic : want to make sure that the output is in json format
 def parse_response(response):
